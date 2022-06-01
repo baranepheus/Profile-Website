@@ -12,7 +12,7 @@ const sr = ScrollReveal ({
     reset: true
 })
 
-sr.reveal('.text', {delay:300, origin:'bottom'})
+sr.reveal('.text,.social', {delay:300, origin:'bottom'})
 sr.reveal('#w-h2', {delay:300, origin:'bottom'})
 sr.reveal('#d-h1', {delay:300, origin:'bottom'})
 sr.reveal('header', {delay:100, origin:'top'})

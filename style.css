@@ -190,6 +190,29 @@ span{
     color: #fff;
 }
 
+/* Socials */
+.social{
+    position: absolute;
+    top: 50%;
+    padding: 0 7%;
+    transform: translateY(-50%);
+}
+.social ul li{
+    margin: 20px 0;
+}
+
+.social ul li i{
+    font-size: 22px;
+    color: #161616;
+    transition: all .30s;
+}
+
+.social ul li i:hover{
+    transform: translateY(-5px);
+    color: #245F6C;
+}
+
+
 @media (max-width: 1380px){
     header{
         padding: 18px 2%;
@@ -198,6 +221,9 @@ span{
     section{
         padding: 0 2%;
         transition: .2s;
+    }
+    .social{
+        display: none;
     }
 }
 
@@ -283,8 +309,8 @@ span{
     width: 100%;
     padding: 78px 0px;
     background-color: #EB7A91;
-    min-height: 100vh;
     display: flex;
+    min-height: 100vh;
 }
 
 #aboutme-pic{
