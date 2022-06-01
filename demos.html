@@ -37,36 +37,20 @@
         <a href="https://drive.google.com/uc?export=download&id=1kui7HpovnX1U-3a_os6adkFwwSHy6qsu" download="cv-file" class="btn"> Download CV</a>
     </header>
 
-    <!--Works Here-->
-    <section class="container-full" id="w-section">
-        <div class="container" id="w-container">
-                <div class="col" id="w-col">
-                    <h2 id="w-h2">SoftDev</h2>
-                    <div class="caption">
-                        <p>Cuisina, a mobile application software intended to provide a cookbook that easily searches recipe categorically. The app also has Alarm Clock and Calendar features that would help users in their cooking tasks. Additionally, there is also a Food Stock checklist for their grocery notes.</p>
-                        <button type="button" id="w-btn"> <a href="https://github.com/baranepheus/Cuisina-Elective" style="text-decoration:none; color: #fff" target="_blank">Source Code</a></button>
-                    </div>
-                    <img src="https://drive.google.com/uc?export=download&id=12zyAKj2VVWiwLHQhCuitxJBIs8DbgEvn">
-
-                </div>
-                
-                <div class="col" id="w-col">
-                    <h2 id="w-h2">Prototyping</h2>
-                    <div class="caption">
-                        <p>For Prototyping, I use TinkerCad and Wokwi for Arduino Simulation. Link below is the project of mine and my groupmate's that we have designed last year when pandemic hit hard. The project is made with intention of monitoring social distancing protocols.</p>
-                        <button type="button" id="w-btn"><a href="https://www.tinkercad.com/things/6JRrFEAIwz3?sharecode=rVMeda1CL9rjunRgrvf6ys618onfJPgLc08Yw7PfRTc" target="_blank" style="text-decoration:none; color: #fff">See Prototype</a></button>
-                    </div>
-                    <img src="https://drive.google.com/uc?export=download&id=1T0gSLUFLPo0cVo6zBe-LaCsgcrbLnpHk">
-                </div>
-
-                <div class="col" id="w-col">
-                    <h2 id="w-h2">UI/UX</h2>
-                    <div class="caption">
-                        <p>For UI/UX Design & Wireframing process, I use Adobe XD. This helps me conveniently visualize the creative ideas I have. For more technical designs, my go-to is Adobe Photoshop. On the other hand, I use Fusion360 and Autocad to make 3D designs.</p>
-                        <button type="button" id="w-btn"> <a href="https://drive.google.com/drive/folders/15aTJ1ZRlIW08b4sdowLAIXyS4pZ5_gs3?usp=sharing" style="text-decoration:none; color: #fff" target="_blank">See Gallery</a></button>
-                    </div>
-                    <img src="https://drive.google.com/uc?export=download&id=1AybIW5W-AfLrW8cBrvju44aB78DK2JiP">
-                </div>
+    <!--Demo Here-->
+    
+    <section class="d-section">
+        <h1 id="d-h1">Demo of the Works I Have Worked On</h1>
+        <div class="container" id="d-container">
+            <div class="video-list">
+                <video class="active" src="https://drive.google.com/uc?export=download&id=1BZygwbnBcIoKSnCYySG94MmnJjfcOJuo" muted></video>
+                <video src="https://drive.google.com/uc?export=download&id=1dlVOwstHp1IiU8TEnts3klxkz6GFL5ze" muted></video>
+                <video src="https://drive.google.com/uc?export=download&id=1xd_2krsfVoCOJiLEOtp07HCpdhqmjYB1" muted></video>
+                <video src="https://drive.google.com/uc?export=download&id=10KmBXhJpqIwI6ZBCgS5BCe1HLZ_CUH1W" muted></video>
+            </div>
+            <div class="main-video">
+                <video src="https://drive.google.com/uc?export=download&id=1BZygwbnBcIoKSnCYySG94MmnJjfcOJuo" muted controls></video>
+            </div>
         </div>
 
         <!--Animations-->
@@ -84,10 +68,26 @@
                 <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
             </div>
         </div>
-    </section>  
-    
+
+    </section>
+ 
     <!--Link to JS-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="script.js"></script>
+    <!--JQUERY CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $('.video-list video').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+
+                let src = $(this).attr('src')
+                $('.main-video video').attr('src', src);
+            });
+        });
+
+    </script>
 </body>
 </html>
