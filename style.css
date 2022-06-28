@@ -384,8 +384,8 @@ button:hover{
 
 @media (max-width: 1120px){
     #aboutme-pic img{
-        width: 375px;
-        height: 497px;
+        width: 330px;
+        height: 500px;
     }
     #about-text h1 {
         font-size: 65px;
@@ -405,7 +405,7 @@ button:hover{
 
 @media (max-width: 1440px){
     #aboutme-pic img{
-        width: 375px;
+        width: 340px;
         height: 497px;
     }
     #about-text h1 {
@@ -426,9 +426,29 @@ button:hover{
     }
 }
 
+@media (max-width: 867px){
+    #aboutme-pic img{
+        width: 300px;
+        height: 437px;
+    }
+    #about-text h1 {
+        font-size: 50px;
+    }
+    #about-text h5 {
+        font-size: 18px;
+
+    }
+    #about-text p {
+        font-size: 15px;
+    }
+    #about-text button {
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 667px){
     #aboutme-pic img{
-        width: 200px;
+        width: 180px;
         height: 265px;
     }
 
@@ -458,6 +478,7 @@ button:hover{
         box-shadow: 0px 10px 8px rgb(3 12 29 / 8%);
     }
 }
+
 
 /* Work Page */
 
